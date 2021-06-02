@@ -1,0 +1,328 @@
+{
+    "relations": [
+        {
+            "array1": {
+                "tx-array-name": "copol_tx"
+            },
+            "array2": {
+                "tx-array-name": "xpol_tx"
+            },
+            "entity": 1,
+            "types": [
+                {
+                    "pairs": [
+                        {
+                            "element-array2": 1,
+                            "element_array1": 1
+                        },
+                        {
+                            "element-array2": 2,
+                            "element_array1": 2
+                        },
+                        {
+                            "element-array2": 3,
+                            "element_array1": 3
+                        },
+                        {
+                            "element-array2": 4,
+                            "element_array1": 4
+                        },
+                        {
+                            "element-array2": 5,
+                            "element_array1": 5
+                        },
+                        {
+                            "element-array2": 6,
+                            "element_array1": 6
+                        },
+                        {
+                            "element-array2": 7,
+                            "element_array1": 7
+                        },
+                        {
+                            "element-array2": 8,
+                            "element_array1": 8
+                        }
+                    ],
+                    "relation-type": "COALOCATED"
+                }
+            ]
+        },
+        {
+            "array1": {
+                "rx-array-name": "copol_rx"
+            },
+            "array2": {
+                "rx-array-name": "xpol_rx"
+            },
+            "entity": 1,
+            "types": [
+                {
+                    "pairs": [
+                        {
+                            "element-array2": 1,
+                            "element_array1": 1
+                        },
+                        {
+                            "element-array2": 2,
+                            "element_array1": 2
+                        },
+                        {
+                            "element-array2": 3,
+                            "element_array1": 3
+                        },
+                        {
+                            "element-array2": 4,
+                            "element_array1": 4
+                        },
+                        {
+                            "element-array2": 5,
+                            "element_array1": 5
+                        },
+                        {
+                            "element-array2": 6,
+                            "element_array1": 6
+                        },
+                        {
+                            "element-array2": 7,
+                            "element_array1": 7
+                        },
+                        {
+                            "element-array2": 8,
+                            "element_array1": 8
+                        }
+                    ],
+                    "relation-type": "COALOCATED"
+                }
+            ]
+        }
+    ],
+    "rx-arrays": [
+        {
+            "band-number": 1,
+            "capabilities": [
+                {
+                    "max-carrier-bandwidth-ul": "1000000000",
+                    "max-num-carriers-ul": 1,
+                    "max-supported-bandwidth-ul": "2000000000",
+                    "max-supported-frequency-ul": "1900000000",
+                    "min-carrier-bandwidth-ul": "500000000",
+                    "min-supported-frequency-ul": "1800000000"
+                }
+            ],
+            "gain-correction-range": {
+                "max": 69.9,
+                "min": 29.9
+            },
+            "horizontal-spacing": 15.5,
+            "leftmost-bottom-array-element-position": {
+                "x": 10.0,
+                "y": 12.0,
+                "z": 14.0
+            },
+            "name": "copol_rx",
+            "normal-vector-direction": {
+                "azimuth-angle": 0.0,
+                "zenith-angle": 0.0
+            },
+            "number-of-array-layers": 2,
+            "number-of-columns": 1,
+            "number-of-rows": 48,
+            "polarisations": [
+                {
+                    "p": 0,
+                    "polarisation": "PLUS_45"
+                }
+            ],
+            "vertical-spacing": 35.5
+        },
+        {
+            "band-number": 1,
+            "capabilities": [
+                {
+                    "max-carrier-bandwidth-ul": "1000000000",
+                    "max-num-carriers-ul": 1,
+                    "max-supported-bandwidth-ul": "2000000000",
+                    "max-supported-frequency-ul": "1900000000",
+                    "min-carrier-bandwidth-ul": "500000000",
+                    "min-supported-frequency-ul": "1800000000"
+                }
+            ],
+            "gain-correction-range": {
+                "max": 69.9,
+                "min": 29.9
+            },
+            "horizontal-spacing": 15.5,
+            "leftmost-bottom-array-element-position": {
+                "x": 10.0,
+                "y": 12.0,
+                "z": 14.0
+            },
+            "name": "xpol_rx",
+            "normal-vector-direction": {
+                "azimuth-angle": 0.0,
+                "zenith-angle": 0.0
+            },
+            "number-of-array-layers": 2,
+            "number-of-columns": 1,
+            "number-of-rows": 48,
+            "polarisations": [
+                {
+                    "p": 1,
+                    "polarisation": "MINUS_45"
+                }
+            ],
+            "vertical-spacing": 35.5
+        }
+    ],
+    "static-low-level-rx-endpoint": [
+        {
+            "array": "copol_rx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_1_rx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        },
+        {
+            "array": "copol_rx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_2_rx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        },
+        {
+            "array": "xpol_rx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_3_rx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        },
+        {
+            "array": "xpol_rx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_4_rx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        }
+    ],
+    "static-low-level-tx-endpoint": [
+        {
+            "array": "copol_tx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_1_tx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        },
+        {
+            "array": "copol_tx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_2_tx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        },
+        {
+            "array": "xpol_tx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_3_tx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        },
+        {
+            "array": "xpol_tx",
+            "capacity-sharing-groups": [],
+            "endpoint-type": 1,
+            "name": "beam_4_tx",
+            "restricted-interfaces": [
+                "eth1"
+            ]
+        }
+    ],
+    "tx-arrays": [
+        {
+            "band-number": 1,
+            "capabilities": [
+                {
+                    "max-carrier-bandwidth-dl": "1000000000",
+                    "max-num-carriers-dl": 1,
+                    "max-supported-bandwidth-dl": "2000000000",
+                    "max-supported-frequency-dl": "1900000000",
+                    "min-carrier-bandwidth-dl": "500000000",
+                    "min-supported-frequency-dl": "1800000000"
+                }
+            ],
+            "horizontal-spacing": 15.5,
+            "independent-power-budget": false,
+            "leftmost-bottom-array-element-position": {
+                "x": 10.0,
+                "y": 12.0,
+                "z": 14.0
+            },
+            "max-gain": 65.5,
+            "name": "copol_tx",
+            "normal-vector-direction": {
+                "azimuth-angle": 0.0,
+                "zenith-angle": 0.0
+            },
+            "number-of-array-layers": 2,
+            "number-of-columns": 1,
+            "number-of-rows": 48,
+            "polarisations": [
+                {
+                    "p": 0,
+                    "polarisation": "PLUS_45"
+                }
+            ],
+            "vertical-spacing": 35.5
+        },
+        {
+            "band-number": 1,
+            "capabilities": [
+                {
+                    "max-carrier-bandwidth-dl": "1000000000",
+                    "max-num-carriers-dl": 1,
+                    "max-supported-bandwidth-dl": "2000000000",
+                    "max-supported-frequency-dl": "1900000000",
+                    "min-carrier-bandwidth-dl": "500000000",
+                    "min-supported-frequency-dl": "1800000000"
+                }
+            ],
+            "horizontal-spacing": 15.5,
+            "independent-power-budget": false,
+            "leftmost-bottom-array-element-position": {
+                "x": 10.0,
+                "y": 12.0,
+                "z": 14.0
+            },
+            "max-gain": 65.5,
+            "name": "xpol_tx",
+            "normal-vector-direction": {
+                "azimuth-angle": 0.0,
+                "zenith-angle": 0.0
+            },
+            "number-of-array-layers": 2,
+            "number-of-columns": 1,
+            "number-of-rows": 48,
+            "polarisations": [
+                {
+                    "p": 0,
+                    "polarisation": "MINUS_45"
+                }
+            ],
+            "vertical-spacing": 35.5
+        }
+    ]
+}
